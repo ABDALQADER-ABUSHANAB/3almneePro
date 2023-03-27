@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar {
+    width: 15px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(200, 200, 200);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: white;    /* color of the scroll thumb */
+    border-radius: 5px;       /* roundness of the scroll thumb */
+    border: 3px solid  rgb(90, 90, 255);  /* creates padding around scroll thumb */
+  }
+
+  .js-slidein {
+    opacity: 0;
+    transform: translateY(100px);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .js-slidein-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+  div{
+    transition-duration: 1s;
+  }
+
+  .slider {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider img {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slider img.active {
+    opacity: 1;
+  }
+
+  .feed-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .feed-in.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .image-container {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .image-container img {
+    margin: 5px;
+    border: 1px solid black;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  
+  
+  
