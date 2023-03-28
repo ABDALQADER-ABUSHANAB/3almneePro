@@ -7,9 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('build/assets/images/apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('build/assets/images/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('build/assets/images/favicon-16x16.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('build/assets/images/favicon.ico')}}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{asset('build/assets/images/android-chrome-192x192.png')}}">
+    <link rel="icon" type="image/png" sizes="512x512" href="{{asset('build/assets/images/android-chrome-512x512.png')}}">
+    <link rel="manifest" href="{{asset('build/assets/images/site.webmanifest')}}">
     <script defer="" src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  
+
     <style>
 
     </style>
@@ -44,10 +52,10 @@
                     <li class="font-semibold text-sky-500 hover:text-sky-800 transition ease-in-out duration-300 mb-5 lg:mb-0">
                       <a href="{{route('Home')}}#Donate">{{__('Donate')}}</a>
                   </li>
-                  
+
                   <li class="font-semibold text-sky-500 hover:text-sky-800 transition ease-in-out duration-300 mb-5 lg:mb-0">
                     <a href="{{route('MasterCoursesGuest')}}">{{__('Other Courses')}}</a>
-                  </li>                      
+                  </li>
                     <li class="font-semibold text-sky-500 hover:text-sky-800 transition ease-in-out duration-300 mb-5 lg:mb-0">
                         <a href="#About">{{__('About Us')}}</a>
                     </li>
@@ -101,7 +109,7 @@
 
                     <div class="flex justify-center">
                         <a href="https://api.whatsapp.com/send?phone=962789822724&text=hi%20we%20will%20be%20with%20you%20as%20possible%20as%20we%20can" class="flex items-center text-sky-500 gap-5 px-6 py-4 font-semibold text-info text-lg rounded-xl hover:bg-info hover:text-white transition ease-linear duration-500">
-                            Learn more 
+                            Learn more
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
                         </a>
                     </div>
@@ -120,7 +128,7 @@
 
                     <div class="flex justify-center">
                         <a href="https://api.whatsapp.com/send?phone=962789822724&text=hi%20we%20will%20be%20with%20you%20as%20possible%20as%20we%20can" class="flex items-center text-sky-500 gap-5 px-6 py-4 font-semibold text-info text-lg rounded-xl hover:bg-info hover:text-white transition ease-linear duration-500">
-                            Learn more 
+                            Learn more
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
                         </a>
                     </div>
@@ -139,7 +147,7 @@
 
                     <div class="flex justify-center">
                         <a href="https://api.whatsapp.com/send?phone=962789822724&text=hi%20we%20will%20be%20with%20you%20as%20possible%20as%20we%20can" class="flex items-center text-sky-500 gap-5 px-6 py-4 font-semibold text-info text-lg rounded-xl hover:bg-info hover:text-white transition ease-linear duration-500">
-                            Learn more 
+                            Learn more
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
                         </a>
                     </div>
@@ -222,9 +230,9 @@
                                   </div>
                                 </div>
                           </div>
-                  
+
                       </section>
-                  
+
     <!-- donation section //end -->
 
     <!-- feature section -->
@@ -243,9 +251,9 @@
                       <div class="w-20 py-6 flex justify-center bg-yellow-500 bg-opacity-5 rounded-xl mb-4">
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users text-yellow-500"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                       </div>
-  
+
                       <h3 class="font-semibold text-gray-900 text-xl md:text-3xl mb-4">{{__('1200+')}}</h3>
-  
+
                       <p class="font-light text-gray-400 text-md md:text-lg">{{__('Our volunteer around the ')}}<br> {{__('world')}}</p>
                   </div>
 
@@ -253,33 +261,33 @@
                       <div class="w-20 py-6 flex justify-center bg-green-500 bg-opacity-5 rounded-xl mb-4">
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up text-green-500"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
                       </div>
-  
+
                       <h3 class="font-semibold text-gray-900 text-xl md:text-3xl mb-4">{{__('98%')}}</h3>
-  
+
                       <p class="font-light text-gray-400 text-md md:text-lg">{{__('Positive review from')}} <br>{{__(' public')}}</p>
                   </div>
               </div>
             </div>
               <div class="mt-16 ">
-                  
+
                     <div class="grid grid-cols-1 md:grid-cols-2 md:space-x-50 mb-16 feed-in">
                         <div class="mb-5 md:mb-0">
                             <div class="w-20 py-6 flex justify-center bg-info bg-opacity-5 rounded-xl mb-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun text-info"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
                             </div>
-        
+
                             <h3 class="font-semibold text-gray-900 text-xl md:text-3xl mb-4">{{__('10000+')}}</h3>
-        
+
                             <p class="font-light text-gray-400 text-md md:text-lg">{{__('Fundraising campaign in')}} <br>{{__(' all time')}}</p>
                         </div>
-        
+
                         <div>
                             <div class="w-20 py-6 flex justify-center bg-red-500 bg-opacity-5 rounded-xl mb-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award text-red-500"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
                             </div>
-        
+
                             <h3 class="font-semibold text-gray-900 text-xl md:text-3xl mb-4">{{__('$120M+')}}</h3>
-                            
+
                             <p class="font-light text-gray-400 text-md md:text-lg">{{__('Raised and counting')}}<br>{{__(' donations in all time')}}</p>
                           </div>
                       </div>
@@ -292,18 +300,18 @@
                               <a href="https://api.whatsapp.com/send?phone=962789822724&text=hi%20I%20want%20To%20Donate%20Please" class="bg-[#0056FF] px-5 hover:bg-sky-900 py-2 rounded-lg text-white">Donate</a>
                           </div>
                       </div>
-                      
+
                   </div>
               </div>
         </div> <!-- container.// -->
-        
+
     </section>
     <!-- feature section //end -->
 
     <!-- join volunters section -->
     <section class="py-16" id='About'>
       <h1 class="font-light text-gray-500 text-lg md:text-2xl text-center uppercase mb-6">{{__('Who We Are')}} <br>{{__('About Us')}}</h1>
-      
+
         <div class="container max-w-screen-xl mx-auto px-4 m-auto text-center">
           <div class='text-sky-900 font-bold text-4xl text-center m-auto mb-40'>
               {{__('Our organization is based on helping people and people with special needs to communicate better through coaches and private courses, paid and free.')}}
@@ -317,14 +325,14 @@
                         <img src="/build/assets/images/footer-6.jfif" class="max-w-full h-auto rounded-lg feed-in" alt="">
                         <img src="/build/assets/images/footer-9.jfif" class="max-w-full h-auto rounded-lg feed-in" alt="">
                         <img src="/build/assets/images/footer-8.jfif" class="max-w-full h-auto rounded-lg feed-in" alt="">
-                        <img src="/build/assets/images/footer-5.jfif" class="max-w-full h-auto rounded-lg feed-in" alt="">  
+                        <img src="/build/assets/images/footer-5.jfif" class="max-w-full h-auto rounded-lg feed-in" alt="">
                         <img src="/build/assets/images/footer-7.jfif" class="max-w-full h-auto rounded-lg feed-in" alt="">
-                        <img src="/build/assets/images/footer-10.jfif" class="max-w-full h-auto rounded-lg feed-in" alt="">  
+                        <img src="/build/assets/images/footer-10.jfif" class="max-w-full h-auto rounded-lg feed-in" alt="">
                         <button class="prev-btn absolute left-3 bg-gray-900 opacity-50 px-1 py-2 rounded-xl text-white font-bold text-2xl"><<</button>
                         <button class="next-btn absolute right-3 bg-gray-900 opacity-50 py-2 px-1 rounded-xl text-white font-bold text-2xl">>></button>
                     </div>
                 </div>
-                    
+
                 </div>
 
         </div> <!-- container.// -->
@@ -341,7 +349,7 @@
                     <div class="flex justify-center lg:justify-start">
                         <img src="build/assets/images/logo.png" alt="Image">
                     </div>
-                    
+
                     <p class="font-light text-gray-400 text-md md:text-lg text-center lg:text-left">{{__('Learn and help others people ')}}<br> {{__('around the world')}}</p>
 
                     <div class="flex items-center justify-center lg:justify-start space-x-5">
@@ -395,41 +403,41 @@
 
             </div>
         </div> <!-- container.// -->
-    
+
     </footer>
 
     <script src="{{asset('/build/assets/Jquery.js')}}"></script>
-    <script src="{{asset('/build/assets/function.js')}}"></script>  
+    <script src="{{asset('/build/assets/function.js')}}"></script>
     <script>
   feather.replace();
   $(document).ready(function() {
   // Set the first image as active
   $('.slider img:first-child').addClass('active');
-  
+
   // Next button handler
   $('#next').click(function() {
     var activeImg = $('.slider img.active');
     var nextImg = activeImg.next('img');
-    
+
     // If the active image is the last one, set the next image as the first one
     if (nextImg.length === 0) {
       nextImg = $('.slider img:first-child');
     }
-    
+
     activeImg.removeClass('active');
     nextImg.addClass('active');
   });
-  
+
   // Previous button handler
   $('#prev').click(function() {
     var activeImg = $('.slider img.active');
     var prevImg = activeImg.prev('img');
-    
+
     // If the active image is the first one, set the previous image as the last one
     if (prevImg.length === 0) {
       prevImg = $('.slider img:last-child');
     }
-    
+
     activeImg.removeClass('active');
     prevImg.addClass('active');
   });
@@ -438,6 +446,6 @@
 
     </script>
 
-<div class="text-center p-2  text-gray-300 bg-white py-5 font-bold text-lg italic"><Span>&#169;</Span><span >{{Date('Y')}}</span><span>{{__(' CopyRight Are Saved by 3almnne Company')}}</span></div> 
+<div class="text-center p-2  text-gray-300 bg-white py-5 font-bold text-lg italic"><Span>&#169;</Span><span >{{Date('Y')}}</span><span>{{__(' CopyRight Are Saved by 3almnne Company')}}</span></div>
 
 </body></html>

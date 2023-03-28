@@ -6,7 +6,13 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', '3almnee') }}</title>
-
+        <link rel="apple-touch-icon" sizes="180x180" href="{{asset('build/assets/images/apple-touch-icon.png')}}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{asset('build/assets/images/favicon-32x32.png')}}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{asset('build/assets/images/favicon-16x16.png')}}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{asset('build/assets/images/favicon.ico')}}">
+        <link rel="icon" type="image/png" sizes="192x192" href="{{asset('build/assets/images/android-chrome-192x192.png')}}">
+        <link rel="icon" type="image/png" sizes="512x512" href="{{asset('build/assets/images/android-chrome-512x512.png')}}">
+        <link rel="manifest" href="{{asset('build/assets/images/site.webmanifest')}}">
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />

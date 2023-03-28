@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css" integrity="sha512-6mc0R607di/biCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/fontawesome.min.js" integrity="sha512-nKvEIGRKw2OQCR34yLfnWnvrOBxidLG9aK+vzsBxCZ/9ZxgcS4FrYcN+auWUTkCitTVZAt82InDKJ7x+QtKu6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('build/assets/images/apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('build/assets/images/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('build/assets/images/favicon-16x16.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('build/assets/images/favicon.ico')}}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{asset('build/assets/images/android-chrome-192x192.png')}}">
+    <link rel="icon" type="image/png" sizes="512x512" href="{{asset('build/assets/images/android-chrome-512x512.png')}}">
+    <link rel="manifest" href="{{asset('build/assets/images/site.webmanifest')}}">
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
@@ -28,14 +35,14 @@
     <div id="success-notification" class="alert alert-success text-center mt-5 mb-5 text-white bg-green-500 opacity-70 w-1/4 m-auto absolute right-10 bottom-10 rounded-xl py-3">
       {{ session('success') }}
     </div>
-    
+
     <script>
       setTimeout(function() {
         $('#success-notification').fadeOut('fast');
       }, 2000);
       </script>
 @endif
- 
+
     <div class="z-50">
         <div class="m-auto">
               @if ($errors->any())
@@ -51,7 +58,7 @@
               <button class="px-5 py-1 rounded-sm bg-blue-900 text-white mt-4 mb-5" onclick="$('#Error').toggle()">{{__('Ok')}}</button>
               @endif
             </div>
-           
+
   <form action="/Courses/{{$Course->id}}"  method="Post" enctype="multipart/form-data" id="editform" class="mb-4 bg-white w-full md:w-2/4 h-min bg-white p-5 rounded-xl shadow-xl m-auto absolute left-[0%] top-[10%] md:top-[10%] md:left-[25%] text-center fixed">
     @csrf
     @method('PUT')
@@ -59,7 +66,7 @@
        <div class="form-group mb-6">
         <label for="CourseLogo" accept="image/*"
          class="bg-blue-500 px-3  py-2 text-white font-bold  block rounded-lg" style="width: 100%">Course Logo</label>
-        <input type="file" value="{{$Course->CourseLogo}}" name="CourseLogo" id="CourseLogo" accept="image/*"  class="form-control 
+        <input type="file" value="{{$Course->CourseLogo}}" name="CourseLogo" id="CourseLogo" accept="image/*"  class="form-control
           hidden
           w-full
           px-3
@@ -73,9 +80,9 @@
           transition
           ease-in-out
           m-0
-          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
+          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
           aria-describedby="Logo" placeholder="">
-      </div> 
+      </div>
       <div class="form-group mb-6">
         <input type="text" name="CourseName" id="CourseName2" value="{{$Course->CourseName}}" class="form-control
           block
@@ -91,7 +98,7 @@
           transition
           ease-in-out
           m-0
-          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
+          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
           aria-describedby="emailHelp124" placeholder="Course name * ">
       </div>
     </div>
@@ -109,7 +116,7 @@
         transition
         ease-in-out
         m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
         placeholder="Course desc *">
     </div>
     <div class="form-group mb-6">
@@ -126,7 +133,7 @@
         transition
         ease-in-out
         m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
         placeholder="Zoom Link * ">
     </div>
     <div class="form-group mb-6">
@@ -144,13 +151,13 @@
         transition
         ease-in-out
         m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
         placeholder="Price * ">
     </div>
     <div class="grid grid-cols-4 gap-4">
       <div class="form-group mb-6 col-span-4">
-        <select name="CourseType_id" id="CourseType_id2" value="{{$Course->CourseType_id}}" class="form-control 
-      block 
+        <select name="CourseType_id" id="CourseType_id2" value="{{$Course->CourseType_id}}" class="form-control
+      block
        w-full
        px-3
        py-1.5
@@ -164,13 +171,13 @@
        ease-in-out
        m-0
        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
-       <option value="" disabled>*</option>  
-        <option value="1" {{ $Course->CourseType_id ==1 ? 'selected' :null }}>1</option>  
-        <option value="2" {{$Course->CourseType_id ==2 ? 'selected' : null}}>2</option>  
-      </select> 
+       <option value="" disabled>*</option>
+        <option value="1" {{ $Course->CourseType_id ==1 ? 'selected' :null }}>1</option>
+        <option value="2" {{$Course->CourseType_id ==2 ? 'selected' : null}}>2</option>
+      </select>
       </div>
     </div>
-  
+
     <div class="form-group mb-6">
       <input type="number" min="10" value="{{$Course->FullQty}}"  name="FullQty" id="FullQty2" class="form-control block
         w-full
@@ -185,7 +192,7 @@
         transition
         ease-in-out
         m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
         placeholder="FullQty">
     </div>
     <div class="grid grid-cols-2">
@@ -196,11 +203,11 @@
         id="IsFree2" {{$Course->IsFree ==1 ? 'checked'  :null}} value="1" onclick="$('#CoursePrice2').toggle()">
       <label class="form-check-label inline-block text-gray-800" for="IsFree">Is Free</label>
     </div>
-    
+
     <div  class="form-group form-check text-center mb-6">
       <input  type="checkbox"
         class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
-        id="State2" {{ $Course->State == 1 ? 'checked' : null }} value="1" name="State"> 
+        id="State2" {{ $Course->State == 1 ? 'checked' : null }} value="1" name="State">
       <label class="form-check-label inline-block text-gray-800" for="State">Active</label>
     </div>
   </div>
@@ -225,9 +232,9 @@
       ease-in-out"  id="CourseSubmit" >{{__('Edit')}}</button>
   </form>
 
-     
+
               </div>
-              
+
         </div>
     </div>
 
