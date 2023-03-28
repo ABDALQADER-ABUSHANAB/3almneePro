@@ -161,23 +161,25 @@
 
     <!-- Suporet section -->
                       <section class="w-11/12 m-auto">
-                          <h1 class="font-light text-gray-500 text-lg md:text-2xl text-center uppercase mb-5" id='partner'>{{__('Our Supporters')}}</h1>
-                          <h1 class="font-light text-sky-900 text-lg md:text-4xl text-center uppercase mb-40" id='partner'>{{__('First Class')}}</h1>
+                          <h1 class="font-light text-gray-500 text-lg md:text-4xl text-center uppercase mb-5" id='partner'>{{__('Our Supporters')}}</h1>
+                          <h1 class="font-light text-rose-600 text-lg md:text-2xl text-center underline font-bold uppercase mb-40" id='partner'>{{__('Diamound Class')}}</h1>
                           <div class="mb-20">
-                              <div class="max-w-md ml-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl mb-20 feed-in">
-                                  <div class="md:flex">
-                                    <div class="md:shrink-0 bg-gray-100">
-                                      <img class="h-48 w-full object-cover md:h-full md:w-48" src="{{asset('build/assets/images/as-7.jpg')}}" alt="Modern building architecture" >
-                                    </div>
-                                    <div class="p-8">
-                                      <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{{__('Zarqa Camp Community rehabilitation center')}}</div>
-                                      <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">{{__('One of the main sponsors')}}</a>
-                                      <p class="mt-2 text-slate-500">{{__('These organizations are based on improving the network of communication between all members of society.')}}</p>
-                                    </div>
+                            
+                            <div class="max-w-lg m-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-4xl mb-20 feed-in border-b-4 border-red-900">
+                                <div class="md:flex">
+                                  <div class="md:shrink-0 bg-gray-100 flex-2">
+                                    <img class="h-48 w-full  md:h-full contain md:w-[240px] bg-white" src="{{asset('build/assets/images/as-2.png')}}" alt="Modern building architecture">
+                                  </div>
+                                  <div class="p-8">
+                                    <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{{__('America MEPI Company')}}</div>
+                                    <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">{{__('One of the main sponsors')}}</a>
+                                    <p class="mt-2 text-slate-500">{{__('These organizations are based on improving the network of communication between all members of society.')}}</p>
                                   </div>
                                 </div>
+                              </div>
                                 {{--  --}}
-                                <div class="max-w-md mr-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl mb-20 feed-in">
+                                <h1 class="font-light text-sky-900  underline text-lg md:text-2xl  font-bold text-center uppercase mb-40" id='partner'>{{__(' Gold Class')}}</h1> 
+                                <div class="max-w-md mr-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl mb-20 feed-in border-b-4 border-sky-900">
                                     <div class="md:flex">
                                       <div class="md:shrink-0 bg-gray-100">
                                         <img class="h-48 w-full object-cover md:h-full md:w-48 bg-white" src="{{asset('build/assets/images/as-1.png')}}" alt="Modern building architecture" >
@@ -190,21 +192,21 @@
                                     </div>
                                   </div>
                                 {{--  --}}
-
-                                <div class="max-w-md ml-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl mb-20 feed-in">
-                                  <div class="md:flex">
-                                    <div class="md:shrink-0 bg-gray-100 flex-2">
-                                      <img class="h-48 w-full  md:h-full contain md:w-[240px] bg-white" src="{{asset('build/assets/images/as-2.png')}}" alt="Modern building architecture">
-                                    </div>
-                                    <div class="p-8">
-                                      <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{{__('America MEPI Company')}}</div>
-                                      <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">{{__('One of the main sponsors')}}</a>
-                                      <p class="mt-2 text-slate-500">{{__('These organizations are based on improving the network of communication between all members of society.')}}</p>
+                                <div class="max-w-md ml-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl mb-20 feed-in border-b-4 border-sky-900">
+                                    <div class="md:flex">
+                                      <div class="md:shrink-0 bg-gray-100">
+                                        <img class="h-48 w-full object-cover md:h-full md:w-48" src="{{asset('build/assets/images/as-7.jpg')}}" alt="Modern building architecture" >
+                                      </div>
+                                      <div class="p-8">
+                                        <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{{__('Zarqa Camp Community rehabilitation center')}}</div>
+                                        <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">{{__('One of the main sponsors')}}</a>
+                                        <p class="mt-2 text-slate-500">{{__('These organizations are based on improving the network of communication between all members of society.')}}</p>
+                                      </div>
                                     </div>
                                   </div>
-                                </div>
+                                
                                 {{--  --}}
-                                <div class="max-w-md mr-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl mb-20 feed-in">
+                                <div class="max-w-md mr-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl mb-20 feed-in border-b-4 border-sky-900">
                                   <div class="md:flex">
                                     <div class="md:shrink-0 bg-gray-100">
                                       <img class="h-48 w-full  object-cover md:h-full md:w-48 bg-white" src="{{asset('build/assets/images/as-3.png')}}" alt="Modern building architecture">
@@ -217,7 +219,7 @@
                                   </div>
                                 </div>
                                 {{--  --}}
-                                <div class="max-w-md ml-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl mb-20 feed-in">
+                                <div class="max-w-md ml-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl mb-20 feed-in border-b-4 border-sky-900">
                                   <div class="md:flex">
                                     <div class="md:shrink-0 bg-gray-100 ">
                                       <img class="h-48 w-full  md:h-full contain md:w-[240px] bg-white" src="{{asset('build/assets/images/as-4.png')}}" alt="Modern building architecture">
