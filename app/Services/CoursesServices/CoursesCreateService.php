@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Storage;
 
 use function PHPUnit\Framework\isNull;
 
-class CoursesCreateService 
+class CoursesCreateService
 {
 
 /*
@@ -25,7 +25,7 @@ class CoursesCreateService
      *       $table->integer('FullQty')->default(0);
      *       $table->boolean('State')->default(0);
 
-*/    
+*/
 
 public function StoreCourse(CoursesCreteRequest $request)
 {
@@ -37,6 +37,9 @@ $State=0;$ISFree = 0;$CoursePrice=0;
 if($request->CoursePrice != null){$CoursePrice = $request->CoursePrice;}
 if ($request->StateV != null ){$State = 1;}
 if ($request->IsFreeV != null ){$ISFree = 1;}
+if ($ISFree ==1) {
+    $CoursePrice = 0;
+}
     $course = Courses::create([
             'CourseName' => strtolower($request->CourseName),
             'CourseLogo' => $file,
