@@ -20,6 +20,7 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->boolean('ISAdmin')->default(0);
             $table->json('rules')->nullable();
+            $table->boolean('active_status')->default(0);
             $table->string('Phone')->nullable();
             $table->String('country')->nullable();
             $table->integer('Age');
